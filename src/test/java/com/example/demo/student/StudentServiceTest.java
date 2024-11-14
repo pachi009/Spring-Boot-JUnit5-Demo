@@ -12,6 +12,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
+// BDDMockito is a different way of writing tests. We can use either Mockito or it's subclass BDDMockito to return mocked instances.
+// I personally prefer Mockito.when(<some internal method call>).thenReturn(<desired object or throw exception>)
+
 @ExtendWith(MockitoExtension.class)
 class StudentServiceTest {
 
